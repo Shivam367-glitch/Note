@@ -1,4 +1,4 @@
-console.log("Hello");
+
 //note added  
 displayNote();
 let addbtn = document.getElementById("addbtn");
@@ -78,7 +78,7 @@ search.addEventListener("input", function() {
     Array.from(noteCards).forEach(function(element) {
 
         let cardTxt = element.getElementsByTagName("p")[0].innerHTML;
-        console.log(cardTxt);
+     //   console.log(cardTxt);
         if (cardTxt.includes(searchval)) {
             element.style.display = "block";
         } else {
